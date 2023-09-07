@@ -1,0 +1,27 @@
+@import './colors';
+@import './typography';
+
+%button {
+    transition: all 0.5s ease;
+    appearance: none;
+    border: 0;
+    background-color: white;
+    box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.05);
+    border: 2px solid #eee;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+%button-small {
+    @extend %button;
+    @extend %label;
+}
+
+%button-tag {
+    @extend %button;
+    @extend %label;
+    border-radius: 20px;
+    padding: 5px 15px;
+}

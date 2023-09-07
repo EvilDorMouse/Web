@@ -1,0 +1,26 @@
+@font-face 
+{
+    font-family: 'Dancing Script';
+    font-style: cursive;
+    src: url(https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap);
+}
+
+@font-face 
+{
+    font-family: 'Kalam';
+    font-style: cursive;
+    src: url(https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kalam:wght@300&display=swap);
+}
+
+%label {
+    font-family: 'Kalam', cursive;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+%header {
+    font-family: 'Dancing Script', cursive;  
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+}
