@@ -1,0 +1,125 @@
+@import './typography';
+@import './colors';
+@import './buttons';
+
+*
+{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.frame
+{
+    width: 3720px;
+    height: 5100px;
+    
+    background-color: #D9D9D9;
+}
+
+.phone
+{
+    width: 394px;
+    height: 853px;
+
+    border: 16.8px solid $phone-2;
+    border-radius: 54px;
+    
+    background: linear-gradient( $phone-4,  $phone-4), linear-gradient( $phone-3,  $phone-3), url("/Texture-phone.svg"), ;
+    background-blend-mode: color-burn;
+}
+
+.bgRectangle
+{
+    width: 157px;
+    height: 47px;
+
+    border-radius: 24px;
+    background-color: $phone-2;
+
+    margin-left: 118px;
+    margin-top: -22px;
+
+    position: absolute;
+}
+
+svg
+{
+    position: absolute;
+}
+
+header
+{
+    height: 56.21px;
+    width: 363.47px;
+
+    margin: 24.31px auto 50.48px auto;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo
+{
+    @extend %button-logo;
+}
+
+.menu
+{
+    @extend %button-menu;
+}
+
+main
+{
+    width: 358px;
+    height: 458px;
+
+    margin: auto;
+}
+
+h1
+{
+    @extend %headline;
+
+    width: 358px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+main p
+{
+    @extend %paragraph;
+
+    width: 358px;
+    height: auto;
+}
+
+footer
+{
+    margin-top: 58px;
+}
+
+footer p
+{
+    @extend %footer-paragraph;
+    
+    width: 312px;
+    height: 123px;
+    
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+footer button
+{
+    @extend %button-arrow;
+
+    margin-top: 23.5px;
+    margin-left: 84.64px;
+}
